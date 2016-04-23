@@ -1,0 +1,27 @@
+<Html>
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Introdução ao jQuery</title>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+    </head>
+    
+    <body class="container">
+
+	    <h1>Hello World</h1>
+
+	    <label>Digite seu nome:</label>
+	    <input id="campo-nome"/>
+	    <input id="botao-copiar" type="button" value="copiar"/>
+	
+	    <h2 id="texto-copiado"></h2>
+	
+	
+	    <script src="scripts/jquery-2.2.3.js"></script>
+        <script>
+            $('#texto-copiado').text('Alura');
+        </script>
+	
+    </body>
+</Html>
