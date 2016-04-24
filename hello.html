@@ -20,7 +20,11 @@
 	
 	    <script src="scripts/jquery-2.2.3.js"></script>
         <script>
-            $('#texto-copiado').text('Alura');
+            $('#botao-copiar').on('click', function () {
+                campoNome = $('#campo-nome');
+                $('#texto-copiado').text(campoNome.val());
+                campoNome.val('');
+            });
         </script>
 	
     </body>
