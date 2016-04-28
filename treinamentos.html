@@ -50,6 +50,19 @@
                 $('#treinamento').val('');
                 
             });
+            
+            $('#botao-atualiza').click(function(){
+                $.get({
+                        url: 'http://mirrorfashion.caelum.com.br/treinamentos', 
+                        dataType: 'jsonp', 
+                        success : function(retorno) {
+                           $.each(retorno.treinamentos, function() {
+                              var treinamento = this;
+                              $('<li>').text(treinamento.nome).css('color', 'green').appendTo('#lista');
+                           });
+                        }
+                });
+            });
         
         </script>
         
